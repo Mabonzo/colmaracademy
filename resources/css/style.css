@@ -18,7 +18,9 @@ html {
 header {
   position: fixed;
   justify-content: space-between;
+  z-index: 50;
   height: 8rem;
+  background-color: #FFF;
   font-size: 3rem;
 }
 header img {
@@ -30,4 +32,15 @@ header ul li {
 }
 header ul li:last-child {
   margin-right: 3rem;
+}
+
+/*Banner*/
+.banner {
+  padding-top: 8rem;
+  background-color: #FFF;
+  justify-content: flex-start;
+}
+.banner img {
+  margin: 32px 24px;
+  width: 60%;
 }
