@@ -1,4 +1,4 @@
-/*General*/
+/*~~General*/
 html {
   font-size: 8px;
 }
@@ -11,9 +11,10 @@ html {
   align-items: center;
 }
 .item {
+  display: flex;
 }
 
-/*Header*/
+/*~~Header*/
 header {
   position: fixed;
   justify-content: space-between;
@@ -33,10 +34,10 @@ header ul li:last-child {
   margin-right: 3rem;
 }
 
-/*Banner*/
+/*~~Banner*/
 .banner {
   padding-top: 8rem;
-  background-color: #EEE;
+  background-color: #DDD;
   justify-content: flex-start;
 }
 .banner img {
@@ -68,10 +69,55 @@ header ul li:last-child {
   padding: 1rem 10rem;
 }
 
-/*Main*/
-main .container {
-  margin: 4rem 3rem;
+/*~~Main*/
+main {
+  font-size: 3rem;
 }
-main img {
+/*~Preamble*/
+.preamble .left {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 4rem 3rem;
+  width: calc(55vw + 6rem);
+}
+.preamble .left img {
   width: 55vw;
 }
+.preamble .left h1 {
+  font-size: 6rem;
+  margin: 4rem 0 3rem;
+}
+.preamble .left h2 {
+  font-size: 3rem;
+}
+.preamble .right {
+  flex-direction: column;
+  width: 50vw;
+  border-left: 0.25rem solid #DDD;
+  padding-top: 2rem;
+}
+.preamble .right .item {
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 0.25rem solid #DDD;
+}
+.preamble .right img {
+  width: 35%;
+  margin: 2rem;
+}
+.preamble .right .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+.preamble .right h1, .preamble .right p, .preamble .right a {
+  margin: 1rem;
+}
+.preamble .right h1 {
+  font-size: 4rem;
+}
+.preamble .right .item:last-child {
+  background-color: #DDD;
+}
+/*Learn*/
