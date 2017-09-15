@@ -11,7 +11,6 @@ html {
   align-items: center;
 }
 .item {
-  display: flex;
 }
 
 /*Header*/
@@ -37,10 +36,42 @@ header ul li:last-child {
 /*Banner*/
 .banner {
   padding-top: 8rem;
-  background-color: #FFF;
+  background-color: #EEE;
   justify-content: flex-start;
 }
 .banner img {
   margin: 32px 24px;
-  width: 60%;
+  width: 60vw;
+}
+.banner .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.banner .item {
+  margin: 1.5rem;
+}
+.banner h1, .banner h2, .banner .btn {
+  display: block;
+}
+.banner .btn {
+  background-color: grey;
+}
+.banner h1 {
+  font-size: 5rem;
+}
+.banner h2 {
+  font-size: 4rem;
+}
+.banner h3 {
+  font-size: 3.5rem;
+  padding: 1rem 10rem;
+}
+
+/*Main*/
+main .container {
+  margin: 4rem 3rem;
+}
+main img {
+  width: 60vw;
 }
