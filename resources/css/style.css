@@ -13,7 +13,13 @@ html {
 .item, .row {
   display: flex;
 }
-
+h1, h2, h3, p, a, li {
+font-family: 'Oxygen', sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
 /*~~Header*/
 header {
   position: fixed;
@@ -51,6 +57,7 @@ header ul li:last-child {
 }
 .banner .item {
   margin: 1.5rem;
+  flex-direction: column;
 }
 .banner h1, .banner h2, .banner .btn {
   display: block;
@@ -123,7 +130,46 @@ main {
 /*~Learn*/
 .learn {
   flex-direction: column;
+  background-color: #DDD;
+  padding-bottom: 4rem;
 }
 .learn .container {
   flex-direction: inherit;
+}
+.learn h1:first-child {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 32px 0;
+  color: #444;
+}
+.learn .row {
+  margin: 0 9rem;
+  justify-content: space-between;
+}
+.learn .card {
+  margin: 4rem;
+  background-color: #FFF;
+}
+.learn img {
+  width: 45rem;
+  margin: 0 0 2rem;
+}
+.learn h1, .learn h2, .learn h3 {
+  margin: 0 2rem;
+}
+.learn h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 2rem;
+}
+.learn h2 {
+  margin: 1rem 2rem;
+}
+.learn h3 {
+  margin: 1rem 2rem 3rem 2rem;
+}
+/*~Thesis*/
+.thesis h1 {
+  margin: 4rem 0;
 }
